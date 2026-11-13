@@ -1,0 +1,5 @@
+:root{--sky:#5BB8EA;--ink:#23264A;--hero:#FF7A3D;--cream:#FFF7E6}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(#5BB8EA,#BFE6F5);font-family:system-ui,sans-serif;color:var(--ink);padding:16px}
+main{max-width:640px;width:100%;text-align:center}img{width:100%;height:auto;border-radius:16px;box-shadow:0 6px 0 rgba(35,38,74,.25)}
+h1{font-size:clamp(22px,5vw,34px);margin:20px 0 4px}p{margin:0 0 20px}
+.get{display:inline-block;background:var(--hero);color:var(--cream);font-weight:800;text-decoration:none;padding:14px 24px;border-radius:14px;box-shadow:0 4px 0 #C4521F}
