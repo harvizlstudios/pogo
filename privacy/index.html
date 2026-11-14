@@ -1,0 +1,306 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>Pogo Privacy Policy</title>
+<meta name="description" content="How Pogo: To the Stars by Harvizl Studios handles information.">
+<link rel="canonical" href="https://harvizlstudios.github.io/pogo/privacy/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Lilita+One&family=Nunito:wght@400;600;700&display=swap">
+<style>
+  /* Layout: one readable column; a sky-blue header band like the game's title screen, then plain sections. */
+  :root {
+    --bg: #F6FAFE;
+    --surface: #FFFFFF;
+    --ink: #1B2440;
+    --muted: #55607E;
+    --line: #DCE5F1;
+    --sky: #7EC8F2;
+    --sky-deep: #2F6FB0;
+    --sun: #FFC23A;
+    --chip: #EAF4FC;
+    --display: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
+    --body: "Nunito", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F1526; --surface: #161E33; --ink: #E7EDF8; --muted: #A3AFC8; --line: #26314D;
+      --sky: #1E3E66; --sky-deep: #8CC8F5; --sun: #FFC23A; --chip: #1C2742; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F1526; --surface: #161E33; --ink: #E7EDF8; --muted: #A3AFC8; --line: #26314D;
+    --sky: #1E3E66; --sky-deep: #8CC8F5; --sun: #FFC23A; --chip: #1C2742; color-scheme: dark;
+  }
+
+  body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.65; }
+  .band { background: var(--sky); }
+  .wrap {
+    max-width: 44rem; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  header .wrap { padding-block: 2.75rem 2.25rem; display: grid; gap: 0.5rem; }
+  .brand { font-family: var(--display); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.85rem; color: #1B2440; opacity: 0.8; }
+  :root[data-theme="dark"] .brand { color: var(--ink); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .brand { color: var(--ink); } }
+  h1 { font-family: var(--display); font-weight: 600; font-size: clamp(2.2rem, 7vw, 3.1rem); line-height: 1.05; margin: 0; text-wrap: balance; color: var(--ink); }
+  /* game logo: fixed brand colours (it sits on the sky band in both themes) */
+  .logo { width: min(100%, 26rem); height: auto; display: block; margin: 0.25rem auto 0.5rem; overflow: visible; }
+  .logo text { font-family: "Lilita One", "Fredoka", "Trebuchet MS", sans-serif; }
+  .logo .hop, .logo .coil { transform-box: fill-box; transform-origin: 50% 100%; }
+  @media (prefers-reduced-motion: no-preference) {
+    .logo .hop { animation: hop 1.25s ease-in-out infinite; }
+    .logo .coil { animation: coil 1.25s ease-in-out infinite; }
+    .logo .d1 { animation-delay: -0.11s; } .logo .d2 { animation-delay: -0.22s; } .logo .d3 { animation-delay: -0.33s; }
+    .logo .twinkle { animation: twinkle 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .logo .twinkle.t2 { animation-delay: -1.1s; }
+  }
+  @keyframes hop { 0%, 100% { transform: translateY(0) scale(1.06, 0.93); } 50% { transform: translateY(-16px) scale(0.97, 1.04); } }
+  @keyframes coil { 0%, 100% { transform: scaleY(0.82); } 50% { transform: scaleY(1.12); } }
+  @keyframes twinkle { 0%, 100% { opacity: 0.45; transform: scale(0.7) rotate(0deg); } 50% { opacity: 1; transform: scale(1.1) rotate(45deg); } }
+  header h1 { text-align: center; }
+  header .brand, header .meta { text-align: center; }
+  .meta { margin: 0; color: var(--ink); font-weight: 600; }
+
+  main .wrap { padding-block: 2rem 4rem; display: grid; gap: 2.25rem; }
+  section { display: grid; gap: 0.6rem; }
+  h2 { font-family: var(--display); font-weight: 600; font-size: 1.45rem; line-height: 1.2; margin: 0; text-wrap: balance; }
+  h3 { font-family: var(--display); font-weight: 500; font-size: 1.1rem; margin: 0.4rem 0 0; }
+  p, ul { margin: 0; }
+  ul { padding-left: 1.2rem; display: grid; gap: 0.35rem; }
+  a { color: var(--sky-deep); font-weight: 700; text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 3px; }
+  strong { font-weight: 700; }
+
+  .glance { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.25rem 1.25rem 1.35rem; display: grid; gap: 0.75rem; }
+  .glance h2 { font-size: 1.2rem; }
+  .glance ul { list-style: none; padding: 0; gap: 0.6rem; }
+  .glance li { display: grid; grid-template-columns: 1.4rem 1fr; gap: 0.5rem; }
+  .glance li::before { content: ""; width: 0.7rem; height: 0.7rem; margin-top: 0.55rem; border-radius: 50%; background: var(--sun); box-shadow: 0 0 0 3px var(--chip); }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: 0.97rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--line); }
+  tr:last-child td { border-bottom: 0; }
+  th { font-family: var(--display); font-weight: 500; color: var(--muted); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; background: var(--chip); }
+
+  .path { font-family: var(--display); font-weight: 500; background: var(--chip); border-radius: 6px; padding: 0.05rem 0.4rem; white-space: nowrap; }
+  .contact { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.1rem 1.25rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; }
+  .contact .addr { font-family: var(--display); font-weight: 600; font-size: 1.2rem; user-select: all; min-width: 0; overflow-wrap: anywhere; }
+  .contact button {
+    font: 600 0.95rem var(--display); color: #1B2440; background: var(--sun); border: 0; border-radius: 999px;
+    padding: 0.45rem 1rem; cursor: pointer;
+  }
+  .contact button:focus-visible { outline: 3px solid var(--sky-deep); outline-offset: 2px; }
+  footer { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); padding-top: 1.25rem; }
+</style>
+<style>.brand a { color: inherit; text-decoration: none; }</style>
+</head><body>
+
+<header class="band">
+  <div class="wrap">
+    <div class="brand"><a href="https://harvizlstudios.github.io/">Harvizl Studios</a></div>
+    <svg class="logo" viewBox="0 0 560 360" role="img" aria-labelledby="logo-title">
+      <title id="logo-title">Pogo: To the Stars</title>
+      <defs>
+        <linearGradient id="letterFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFE58A"/>
+          <stop offset="1" stop-color="#FF7A45"/>
+        </linearGradient>
+        <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stop-color="#FFE58A" stop-opacity="0.7"/>
+          <stop offset="1" stop-color="#FFE58A" stop-opacity="0"/>
+        </radialGradient>
+        <g id="spring">
+          <rect x="-24" y="0" width="48" height="9" rx="4.5" fill="#6B7894"/>
+          <polyline points="-17,0 17,-11 -17,-22 17,-33 -17,-44" fill="none" stroke="#C9D3E0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="-26" y="-56" width="52" height="13" rx="6.5" fill="#E8505B"/>
+          <rect x="-19" y="-53" width="38" height="4" rx="2" fill="#FFF7EA" opacity="0.6"/>
+        </g>
+        <path id="spark" d="M0,-14 L3,-3 L14,0 L3,3 L0,14 L-3,3 L-14,0 L-3,-3 Z"/>
+      </defs>
+      <ellipse cx="280" cy="150" rx="290" ry="150" fill="url(#sunGlow)"/>
+      <!-- springs -->
+      <g transform="translate(108 262)"><g class="coil"><use href="#spring"/></g></g>
+      <g transform="translate(222 262)"><g class="coil d1"><use href="#spring"/></g></g>
+      <g transform="translate(338 262)"><g class="coil d2"><use href="#spring"/></g></g>
+      <g transform="translate(452 262)"><g class="coil d3"><use href="#spring"/></g></g>
+      <!-- letters: shadow, then outlined gradient face -->
+      <g font-size="190" text-anchor="middle">
+        <g class="hop"><g transform="translate(108 208) rotate(-7)">
+          <text x="7" y="10" fill="#23264A" stroke="#23264A" stroke-width="22" stroke-linejoin="round">P</text>
+          <text fill="url(#letterFill)" stroke="#23264A" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill">P</text>
+        </g></g>
+        <g class="hop d1"><g transform="translate(222 208) rotate(4)">
+          <text x="7" y="10" fill="#23264A" stroke="#23264A" stroke-width="22" stroke-linejoin="round">O</text>
+          <text fill="url(#letterFill)" stroke="#23264A" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill">O</text>
+        </g></g>
+        <g class="hop d2"><g transform="translate(338 208) rotate(-4)">
+          <text x="7" y="10" fill="#23264A" stroke="#23264A" stroke-width="22" stroke-linejoin="round">G</text>
+          <text fill="url(#letterFill)" stroke="#23264A" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill">G</text>
+        </g></g>
+        <g class="hop d3"><g transform="translate(452 208) rotate(7)">
+          <text x="7" y="10" fill="#23264A" stroke="#23264A" stroke-width="22" stroke-linejoin="round">O</text>
+          <text fill="url(#letterFill)" stroke="#23264A" stroke-width="20" stroke-linejoin="round" paint-order="stroke fill">O</text>
+        </g></g>
+      </g>
+      <!-- ribbon -->
+      <rect x="68" y="296" width="96" height="48" rx="12" fill="#D9542A" transform="rotate(6 116 320)"/>
+      <rect x="396" y="296" width="96" height="48" rx="12" fill="#D9542A" transform="rotate(-6 444 320)"/>
+      <rect x="120" y="282" width="320" height="58" rx="16" fill="#FF7A45"/>
+      <rect x="136" y="289" width="288" height="9" rx="4.5" fill="#FFF7EA" opacity="0.3"/>
+      <text x="280" y="326" font-size="34" text-anchor="middle" letter-spacing="3" fill="#FFF7EA" stroke="#23264A" stroke-width="7" stroke-linejoin="round" paint-order="stroke fill">TO THE STARS</text>
+      <!-- stars -->
+      <use href="#spark" class="twinkle" x="0" y="0" transform="translate(30 60)" fill="#FFF7EA"/>
+      <use href="#spark" class="twinkle t2" x="0" y="0" transform="translate(532 48) scale(0.8)" fill="#FFE58A"/>
+      <use href="#spark" class="twinkle t2" x="0" y="0" transform="translate(40 250) scale(0.6)" fill="#FFE58A"/>
+      <use href="#spark" class="twinkle" x="0" y="0" transform="translate(524 240) scale(0.65)" fill="#FFF7EA"/>
+    </svg>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 13 November 2026</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="glance" aria-labelledby="glance-h">
+      <h2 id="glance-h">The short version</h2>
+      <ul>
+        <li><span>Pogo has no sign-up, no passwords and no chat. We (Harvizl Studios) do not run servers that receive your data.</span></li>
+        <li><span>Your progress (coins, upgrades, outfits and settings) is saved only on your device.</span></li>
+        <li><span>The online leaderboard shows a random nickname (like “SwiftOtter#4821”) and your best height to other players. It never shows your real name. Tap <span class="path">HIDE ME</span> on the leaderboard to hide yourself.</span></li>
+        <li><span>Pogo is free because it shows ads. Our ad partner, Unity (LevelPlay and Unity Ads), collects some device data to show and measure those ads.</span></li>
+        <li><span>You choose whether ads can be personalised. Change it any time in <span class="path">Settings &rsaquo; AD CHOICES</span>. You see the same number of ads either way.</span></li>
+      </ul>
+    </div>
+
+    <section aria-labelledby="who">
+      <h2 id="who">Who we are</h2>
+      <p>Pogo is a mobile game for Android and iOS made by Harvizl Studios (“we”, “us”). This policy explains what information is handled when you play Pogo, who handles it, and the choices you have. It applies only to the Pogo app.</p>
+    </section>
+
+    <section aria-labelledby="device">
+      <h2 id="device">What Pogo saves on your device</h2>
+      <p>To remember your game, Pogo saves the following in the app’s own storage on your phone or tablet:</p>
+      <ul>
+        <li>Coins, best height, upgrades, power-ups, outfits and trails you own and have equipped</li>
+        <li>Sound and music volume</li>
+        <li>Your answer to the ad choice question</li>
+        <li>A sign-in token for the online leaderboard (see below)</li>
+      </ul>
+      <p>This information is not sent to us. Uninstalling Pogo deletes it, apart from your leaderboard entry, which stays online until you remove it.</p>
+    </section>
+
+    <section aria-labelledby="leaderboard">
+      <h2 id="leaderboard">Online leaderboard</h2>
+      <p>Pogo has a worldwide leaderboard of the 1,000 highest jumps. It is run by <strong>Unity Gaming Services</strong> (Unity Authentication and Unity Leaderboards), operated by Unity Technologies. To take part, Pogo signs you in anonymously in the background. There is no sign-up and you never enter an email address, name or password.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Information</th><th scope="col">Who can see it</th><th scope="col">Used for</th></tr></thead>
+          <tbody>
+            <tr><td>A random player ID created by Unity</td><td>Not shown to anyone</td><td>Telling your scores apart from other players’</td></tr>
+            <tr><td>A random nickname created by Unity, such as “SwiftOtter#4821”</td><td><strong>Everyone who opens the leaderboard</strong></td><td>Showing who holds each place</td></tr>
+            <tr><td>Your best height and your rank</td><td><strong>Everyone who opens the leaderboard</strong></td><td>Ranking the highest jumps</td></tr>
+            <tr><td>IP address and basic device information, sent when the game connects</td><td>Unity only</td><td>Connecting securely, preventing abuse and keeping the service running</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Nicknames are generated automatically and players cannot type their own, so the leaderboard never shows real names or messages.</p>
+      <p><strong>To hide yourself</strong>, open the leaderboard and tap <span class="path">HIDE ME</span>, then confirm. Your nickname and best height are then no longer shown to anyone, and Pogo stops sending scores. Your entry stays stored on Unity Gaming Services, out of view, so that <span class="path">JOIN</span> can put you back later with the same nickname and best. To have your leaderboard entry and anonymous player ID deleted completely, contact us.</p>
+      <p>If Unity has to act on a report about a player account, for example under the EU Digital Services Act, Pogo shows you Unity’s notice in the game.</p>
+    </section>
+
+    <section aria-labelledby="ads">
+      <h2 id="ads">Ads in Pogo</h2>
+      <p>Pogo shows two kinds of video ads:</p>
+      <ul>
+        <li><strong>Optional reward ads.</strong> After a run you can choose to watch one to double your coins. Nothing happens unless you tap to watch.</li>
+        <li><strong>Occasional full-screen ads</strong> between runs.</li>
+      </ul>
+      <p>Ads are delivered by <strong>Unity LevelPlay</strong>, an ad mediation service, and the <strong>Unity Ads</strong> network, both operated by Unity Technologies and its affiliates. To show, measure and protect ads, these services collect information from your device directly. We do not receive it in a form that identifies you.</p>
+
+      <h3>Information our ad partners may collect</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Information</th><th scope="col">Used for</th></tr></thead>
+          <tbody>
+            <tr><td>Advertising ID (Google Advertising ID on Android; IDFA on iOS, only if you allow tracking)</td><td>Personalised ads (when you allow them), frequency capping, measuring ad results</td></tr>
+            <tr><td>IP address and approximate location derived from it (country or region)</td><td>Choosing ads that can be shown where you are, fraud prevention, applying privacy laws</td></tr>
+            <tr><td>Device details such as model, operating system, language, screen size and network type</td><td>Delivering an ad that plays correctly on your device</td></tr>
+            <tr><td>Ad activity such as ads shown, watched, skipped or tapped</td><td>Paying for and measuring ads, granting your reward</td></tr>
+            <tr><td>App details such as the app name and version</td><td>Identifying which app showed the ad</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Unity explains how it handles this information in its <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Game Player and App User Privacy Policy</a>. Pogo is built with the Unity game engine, which may also send Unity basic, non-identifying information about the device and app performance.</p>
+    </section>
+
+    <section aria-labelledby="choice">
+      <h2 id="choice">Your ad choices</h2>
+      <p>The first time you open Pogo, we ask whether our ad partners may use information from your device to show you more relevant ads.</p>
+      <ul>
+        <li><strong>Allow:</strong> ads may be personalised using your advertising ID and ad activity.</li>
+        <li><strong>Don’t Allow:</strong> ads are not personalised, and we tell Unity not to sell or share your information for targeted advertising. You still see ads, chosen without your personal profile.</li>
+      </ul>
+      <p>You can change your answer at any time in <span class="path">Settings &rsaquo; AD CHOICES</span>. You can also:</p>
+      <ul>
+        <li><strong>On iPhone and iPad:</strong> Pogo asks for permission to track only if you chose Allow. You can turn tracking off later in <span class="path">Settings &rsaquo; Privacy &amp; Security &rsaquo; Tracking</span>.</li>
+        <li><strong>On Android:</strong> reset or delete your advertising ID in <span class="path">Settings &rsaquo; Privacy &rsaquo; Ads</span> (the exact menu varies by device).</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="rights">
+      <h2 id="rights">Your privacy rights</h2>
+      <p>Depending on where you live, you may have the right to access, correct or delete personal information, to object to or limit its use, and to withdraw consent.</p>
+      <ul>
+        <li><strong>UK and EEA:</strong> personalised ads are shown only with your consent, which you can withdraw in AD CHOICES. You can also complain to your local data protection authority.</li>
+        <li><strong>US states with privacy laws (including California):</strong> choosing Don’t Allow opts you out of the sale or sharing of personal information for targeted advertising.</li>
+      </ul>
+      <p>You can hide your leaderboard entry yourself at any time with <span class="path">HIDE ME</span>, and ask us to delete your entry and anonymous player ID completely. Because we do not hold personal information about you, requests about ad or leaderboard data are best sent to Unity using the options in its policy linked above. You are also welcome to contact us and we will help.</p>
+    </section>
+
+    <section aria-labelledby="children">
+      <h2 id="children">Children</h2>
+      <p>Pogo is not directed at children under 13, and we do not knowingly collect personal information from them. If you are a parent or guardian and believe your child’s information has been collected through Pogo, contact us and we will work with our ad partner to have it deleted.</p>
+    </section>
+
+    <section aria-labelledby="keep">
+      <h2 id="keep">How long information is kept</h2>
+      <p>Game data stays on your device until you uninstall Pogo. Your leaderboard entry stays online, shown or hidden as you choose, until you ask us to delete it. Unity keeps ad and service data for the periods described in its privacy policy. Unity may process this information in countries other than your own, using the safeguards described in its policy.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes to this policy</h2>
+      <p>If we change how Pogo handles information, for example by adding a new ad partner, we will update this page and the effective date above. Significant changes will also be shown in the game.</p>
+    </section>
+
+    <section aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact us</h2>
+      <p>Questions or privacy requests about Pogo:</p>
+      <div class="contact">
+        <span class="addr" id="email">harvizl@hotmail.com</span>
+        <button type="button" id="copy">Copy address</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Pogo is published by <a href="https://harvizlstudios.github.io/">Harvizl Studios</a>. App ID: com.harvizlstudios.pogo</p>
+    </footer>
+  </div>
+</main>
+
+<script>
+  document.getElementById('copy').addEventListener('click', function () {
+    var btn = this, text = document.getElementById('email').textContent;
+    function done(label) { btn.textContent = label; setTimeout(function () { btn.textContent = 'Copy address'; }, 1600); }
+    function select() {
+      var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected');
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () { done('Copied'); }, select);
+    } catch (e) { select(); }
+  });
+</script>
+
+</body></html>
